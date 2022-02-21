@@ -91,6 +91,15 @@ body {
 a { 
   display: inline-block;
   text-decoration: none; 
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+}
+
+a:hover {
+  color: #ffa500;
 }
 
 li {
@@ -164,9 +173,10 @@ header .wrapper {
 }
 
 
-/* .menus ul li a:hover {
-  color: #ff0000;
-} */
+.menus ul li a:hover {
+  padding: 16px 21px;  
+  background-color: #1BBC9B;
+}
 
 
 
@@ -193,6 +203,7 @@ header .wrapper {
   justify-content: center;
   align-items: center;
   column-gap: 22px;
+  white-space: nowrap;
 }
 
 .portfolio-buttons button {
@@ -202,11 +213,15 @@ header .wrapper {
   color: #fff;
   font-size: 19px;
   letter-spacing: 1px;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
 }
 
 .portfolio-buttons button:hover {
-  background-color: transparent;
-  color: #1ABB99;
+  background-color: #16A086;
 }
 
 .portfolio-icons {
@@ -226,6 +241,14 @@ header .wrapper {
   border-radius: 100%;
   flex-basis: 11%;
   background-color: #01A89E;
+}
+
+.modal-body {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 /* portfolio styling ends  */
@@ -258,6 +281,7 @@ header .wrapper {
 .about-people figure {
   width: 330px;
   height: 340px;
+  margin: auto;
 }
 
 .about-us h3 {
@@ -292,6 +316,10 @@ header .wrapper {
   background-color: #16A086;
 }
 
+.hidden-content:hover {
+  opacity: 1;
+}
+
 .about-us-content figure:hover ~ .hidden-content {
   opacity: 1;
 }
@@ -307,6 +335,11 @@ header .wrapper {
   font-family: "fontAwesome";
   font-size: 39px;
   text-indent: 0;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
 }
 
 .hidden-content li:nth-child(2) a:before {
@@ -321,6 +354,9 @@ header .wrapper {
   content: "\f17d";
 }
 
+.hidden-content li a:hover:before {
+  color: #ffa500;
+}
 /* about us section end  */
 /* contact us section start */
 
@@ -335,25 +371,30 @@ header .wrapper {
 }
 
 .contact-info form {
+  /* padding-right: 8.7%; */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  flex-basis: 46%;
+  flex-basis: 47.2%;
   row-gap: 35px;
 }
 
 .name,.email {
-  flex-basis: 44.7%;
+  flex-basis: 47.7%;
 }
 
 .message {
   flex-basis: 100%;
 }
 
+.contact-info form input ,textarea {
+  box-sizing: border-box;
+}
+
 
 input[type="text"],input[type="email"],textarea {
   width: 100%;
-  padding: 23px 16px;
+  padding: 23px 0 23px 16px;
   border: 4px solid #CCD0D3;
   font-size: 17px;
 }
@@ -373,6 +414,11 @@ input[type="submit"] {
   border: 2px solid #1BBC9B;
   color: #fff;
   font-size: 18px;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
 }
 
 input[type="submit"]:hover {
@@ -381,6 +427,7 @@ input[type="submit"]:hover {
 }
 
 .address-info {
+  padding-left: 2%;
   flex-basis: 49%;
 }
 
@@ -394,6 +441,11 @@ input[type="submit"]:hover {
 .address-info ul li a {
   color: #000;
   font-size: 19px;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
 }
 
 .address-info span{
@@ -421,6 +473,10 @@ input[type="submit"]:hover {
 
 .address-info ul li:nth-child(4) a::before {
   content: "\f003";
+}
+
+.address-info ul li a:hover {
+  color: #ffa500;
 }
 
 /* contat us section end  */
@@ -451,6 +507,7 @@ footer .wrapper {
 
 .copyright {
   font-size: 20px;
+  white-space: nowrap;
 }
 
 .move-up a {
@@ -487,6 +544,71 @@ footer .wrapper {
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 
+header .wrapper,.about-people,.contact-info,footer .wrapper {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+} 
 
+.portfolio-icons {
+  justify-content: space-evenly;
+}
+
+.menus {
+  width: 100%;
+}
+
+.about-us-content {
+  padding-top: 20px;
+}
+
+.portfolio-buttons button {
+  padding:15px 5px;
+  font-size: 11px;
+}
+
+.hidden-content {
+  width: 35%;
+}
+
+.submit {
+  text-align: center;
+}
 
 }  
+
+@media only screen and (max-width: 768px) {
+  .menus {
+    padding: 30px;
+    display: none;
+  }
+
+  .menus ul {
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    background-color: #16A086;
+  }
+
+  .menus ul li a:hover {
+    padding: initial;
+  }
+
+  .hamburger {
+    align-self: flex-start;
+    display: block;
+  }
+
+  .copyright {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .portfolio-buttons button {
+    padding: 15px 4px;
+    font-size: 8px;
+}
+  }
+}
