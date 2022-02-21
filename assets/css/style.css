@@ -236,6 +236,8 @@ header .wrapper {
 
 .about-us {
   margin-top: 9px;
+  padding: 77px 0 104px;
+  background-color: #16A086;
 }
 
 .about-us .wrapper {
@@ -249,8 +251,10 @@ header .wrapper {
 }
 
 .about-us-content {
+  padding-bottom: 24px;
   position: relative;
   flex-basis: 2%;
+  background-color: #fff;
   text-align: center;
 }
 
@@ -270,7 +274,8 @@ header .wrapper {
   font-size: 20px;
 }
 
-.about-us p {
+.about-description {
+  padding: 0 12px;
   margin-top: 29px;
   font-size: 20px;
   text-align: justify;
@@ -314,16 +319,100 @@ header .wrapper {
   content: "\f17d";
 }
 
-
-/* .about-us content {
-
-} */
-
 /* about us section end  */
+/* contact us section start */
+
+.contact-us {
+  padding: 70px 0;
+}
+
+.contact-info {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-basis: 46%;
+  row-gap: 35px;
+}
+
+.name,.email {
+  flex-basis: 44.7%;
+}
+
+.message {
+  flex-basis: 100%;
+}
 
 
+input[type="text"],input[type="email"],textarea {
+  width: 100%;
+  padding: 23px 16px;
+  border: 4px solid #CCD0D3;
+  font-size: 17px;
+}
 
+.submit {
+  flex-basis: 100%;
+  text-align: end;
+}
 
+input[type="submit"] {
+  padding: 17px 50px;
+  background-color: #1BBC9B;
+  border: 2px solid #1BBC9B;
+  color: #fff;
+  font-size: 18px;
+}
+
+.address-info {
+  flex-basis: 49%;
+}
+
+.address-info ul {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 33px;
+}
+
+.address-info ul li a {
+  color: #000;
+  font-size: 19px;
+}
+
+.address-info span{
+  display: block;
+}
+
+.address-info h3 {
+  font-size: 20px;
+}
+
+.address-info ul li a::before {
+  content: "\f041";
+  margin-right: 5px;
+  display: inline;
+  font-family: "fontAwesome";
+}
+
+.address-info ul li:nth-child(2) a::before {
+  content: "\f098";
+}
+
+.address-info ul li:nth-child(3) a::before {
+  content: "\f1ac";
+}
+
+.address-info ul li:nth-child(4) a::before {
+  content: "\f003";
+}
+
+/* contat us section end  */
 
 /*=================================
   main styling ends here
