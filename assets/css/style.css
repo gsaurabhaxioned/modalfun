@@ -149,7 +149,7 @@ header .wrapper {
 
 .menus {
   margin: 0 2.7% 0 auto;
-  flex-basis: 33.6%;
+  flex-basis: 33.5%;
 }
 
 .menus ul {
@@ -163,10 +163,6 @@ header .wrapper {
   font-size: 21px;
 }
 
-.menus ul li:nth-child(2) a {
-  padding: 16px 12px;
-  background-color: green;
-}
 
 /* .menus ul li a:hover {
   color: #ff0000;
@@ -219,6 +215,10 @@ header .wrapper {
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 52px;
+}
+
+.web-icons,.graphic-icons,.flat-icons {
+  display: none;
 }
 
 .portfolio-icons figure {
@@ -290,8 +290,13 @@ header .wrapper {
   left: 50%;
   transform: translate(-50%);
   display: flex;
+  opacity: 0;
   justify-content: space-between;
   background-color: #16A086;
+}
+
+.about-us-content figure:hover ~ .hidden-content {
+  opacity: 1;
 }
 
 .hidden-content li a {
