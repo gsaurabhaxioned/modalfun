@@ -356,6 +356,10 @@ input[type="text"],input[type="email"],textarea {
   font-size: 17px;
 }
 
+textarea {
+  padding-bottom: 37px;
+}
+
 .submit {
   flex-basis: 100%;
   text-align: end;
@@ -422,7 +426,9 @@ input[type="submit"] {
   footer styling starts here
 =================================*/ 
 
-
+.copyright {
+  font-size: 20px;
+}
 
 
 
