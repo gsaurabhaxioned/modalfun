@@ -426,8 +426,40 @@ input[type="submit"] {
   footer styling starts here
 =================================*/ 
 
+footer {
+  padding: 31px 0;
+  background-color: #2D3E50;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
 .copyright {
   font-size: 20px;
+}
+
+.move-up a {
+  padding: 10px 19px;
+  background-color: #1BBC9B;
+  color: #fff;
+  text-indent: -9999px;
+}
+
+.move-up a::before {
+  content: "\f106";
+  float: right;
+  font-family: "fontAwesome";
+  font-size: 45px;
+  text-indent: 0;
+  cursor: pointer;
 }
 
 
