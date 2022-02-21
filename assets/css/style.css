@@ -104,6 +104,19 @@ li {
   width: 92.2%; 
   margin: 0 auto;
 }
+
+/* for section header  */
+
+.section-header {
+  font-size: 43px;
+  text-align: center;
+}
+
+.section-subtext {
+  margin-top: 13px;
+  font-size: 24px;
+  text-align: center;
+}
 /*=================================
   Header styling starts here
 =================================*/
@@ -155,9 +168,9 @@ header .wrapper {
   background-color: green;
 }
 
-.menus ul li a:hover {
-  /* color: #ff0000; */
-}
+/* .menus ul li a:hover {
+  color: #ff0000;
+} */
 
 
 
@@ -171,8 +184,142 @@ header .wrapper {
   main styling starts here
 =================================*/
 
+/* portfolio styling starts  */
+
+.portfolio .wrapper {
+  width: 87.3%;
+  padding: 73px 0;
+}
+
+.portfolio-buttons {
+  margin-top: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 22px;
+}
+
+.portfolio-buttons button {
+  padding: 15px 15px;
+  border: 2px solid #1ABB99;
+  background-color: #1ABB99;
+  color: #fff;
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+
+.portfolio-buttons button:hover {
+  background-color: transparent;
+  color: #1ABB99;
+}
+
+.portfolio-icons {
+  margin-top: 67px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 52px;
+}
+
+.portfolio-icons figure {
+  width: 123px;
+  height: 131px;
+  padding: 54px;
+  margin-right: 1%;
+  border-radius: 100%;
+  flex-basis: 11%;
+  background-color: #01A89E;
+}
+
+/* portfolio styling ends  */
+/* about us section start  */
+
+.about-us {
+  margin-top: 9px;
+}
+
+.about-us .wrapper {
+  width: 76.7%;
+}
+
+.about-people {
+  margin-top: 61px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us-content {
+  position: relative;
+  flex-basis: 2%;
+  text-align: center;
+}
+
+.about-people figure {
+  width: 330px;
+  height: 340px;
+}
+
+.about-us h3 {
+  margin-top: 28px;
+  font-size: 26px;
+}
+
+.about-us span {
+  margin-top: 4px;
+  display: block;
+  font-size: 20px;
+}
+
+.about-us p {
+  margin-top: 29px;
+  font-size: 20px;
+  text-align: justify;
+  word-break: break-all;
+}
+
+.hidden-content {
+  width: 70%;
+  padding: 15px 20px;
+  position: absolute;
+  top: 25.5%;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: space-between;
+  background-color: #16A086;
+}
+
+.hidden-content li a {
+  text-indent: -9999px;
+}
+
+.hidden-content li a::before {
+  content: "\f09a";
+  float: right;
+  color: #DCDCDC;
+  font-family: "fontAwesome";
+  font-size: 39px;
+  text-indent: 0;
+}
+
+.hidden-content li:nth-child(2) a:before {
+  content: "\f099";
+}
+
+.hidden-content li:nth-child(3) a:before {
+  content: "\f0d5";
+}
+
+.hidden-content li:nth-child(4) a:before {
+  content: "\f17d";
+}
 
 
+/* .about-us content {
+
+} */
+
+/* about us section end  */
 
 
 
