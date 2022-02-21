@@ -217,9 +217,6 @@ header .wrapper {
   row-gap: 52px;
 }
 
-.web-icons,.graphic-icons,.flat-icons {
-  display: none;
-}
 
 .portfolio-icons figure {
   width: 123px;
@@ -378,6 +375,11 @@ input[type="submit"] {
   font-size: 18px;
 }
 
+input[type="submit"]:hover {
+  background-color: transparent;
+  color: #1BBC9B;
+}
+
 .address-info {
   flex-basis: 49%;
 }
@@ -452,10 +454,16 @@ footer .wrapper {
 }
 
 .move-up a {
-  padding: 10px 19px;
+  padding: 9px 18px;
+  border: 2px solid #1BBC9B;
   background-color: #1BBC9B;
   color: #fff;
   text-indent: -9999px;
+}
+
+.move-up a:hover {
+  background-color: transparent;
+  color: #1BBC9B;
 }
 
 .move-up a::before {
