@@ -195,6 +195,7 @@ header .wrapper {
 .portfolio .wrapper {
   width: 87.3%;
   padding: 73px 0;
+  position: relative;
 }
 
 .portfolio-buttons {
@@ -224,7 +225,7 @@ header .wrapper {
   background-color: #16A086;
 }
 
-.portfolio-icons {
+.portfolio-icons,.tab-icons {
   margin-top: 67px;
   display: flex;
   flex-wrap: wrap;
@@ -233,7 +234,7 @@ header .wrapper {
 }
 
 
-.portfolio-icons figure {
+.portfolio-icons figure,.tab-icons figure {
   width: 123px;
   height: 131px;
   padding: 54px;
@@ -243,11 +244,21 @@ header .wrapper {
   background-color: #01A89E;
 }
 
+.tab-icons {
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  z-index: 1;
+  top: 29%;
+  left: -200%;
+  background-color: #fff;
+}
+
 .modal-body {
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   display: none;
@@ -259,7 +270,7 @@ header .wrapper {
   height: 50%;
   border-radius: 50%;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   top: 50%;
   left: 50%;
   display: none;
@@ -467,9 +478,23 @@ input[type="submit"]:hover {
   display: block;
 }
 
+.address-info .bak-one {
+  display: inline-block;
+}
+
 .address-info h3 {
   font-size: 20px;
 }
+
+.address a {
+  text-indent: -9999px;
+}
+
+.address a::before {
+  float: right;
+  text-indent: 0;
+}
+
 
 .address-info ul li a::before {
   content: "\f041";
