@@ -221,7 +221,7 @@ header .wrapper {
   background-color: #16A086;
 }
 
-.portfolio-icons,.tab-icons {
+.portfolio-icons {
   margin-top: 67px;
   display: flex;
   flex-wrap: wrap;
@@ -230,7 +230,7 @@ header .wrapper {
 }
 
 
-.portfolio-icons figure,.tab-icons figure {
+.portfolio-icons figure {
   width: 123px;
   height: 131px;
   padding: 54px;
@@ -240,15 +240,6 @@ header .wrapper {
   background-color: #01A89E;
 }
 
-.tab-icons {
-  width: 100%;
-  height: 60%;
-  position: absolute;
-  z-index: 1;
-  top: 28%;
-  left: -200%;
-  background-color: #fff;
-}
 
 .modal-body {
   width: 100%;
