@@ -36,24 +36,44 @@ all_button.addEventListener('click',function(){
     all_designs.forEach(i=>{
         i.style.display = "block";
     });
+
+    main_icons.style.justifyContent = "space-between";
 })
 
 graphic_button.addEventListener('click',function(){
     all_designs.forEach(i=>{
         i.style.display = "none";
     })
+
+    graphic_design.forEach(j => {
+        j.style.display = "block";
+    })
+
+    main_icons.style.justifyContent = "center";
 })
 
 flat_button.addEventListener('click',function(){
     all_designs.forEach(i=>{
         i.style.display = "none";
     })
+
+    flat_design.forEach(j => {
+        j.style.display = "block";
+    })
+
+    main_icons.style.justifyContent = "center";
 })
 
 web_button.addEventListener('click',function(){
     all_designs.forEach(i=>{
         i.style.display = "none";
     })
+
+    web_design.forEach(j => {
+        j.style.display = "block";
+    })
+
+    main_icons.style.justifyContent = "center";
 })
 
 
