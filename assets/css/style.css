@@ -173,8 +173,8 @@ header .wrapper {
 }
 
 
-.menus ul li a:hover,.portfolio-menu {
-  padding: 16px 21px;  
+.menus ul li a:hover {
+  padding: 16px;  
   background-color: #1BBC9B;
 }
 
