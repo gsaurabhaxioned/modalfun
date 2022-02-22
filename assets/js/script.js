@@ -10,9 +10,10 @@ let modal_image = document.querySelectorAll('.modal-click'),
 modal_body = document.querySelector('.modal-body'),
 modal_box = document.querySelector('.modal-box'),
 image_source = document.querySelector('.modal-image'),
-buttons = document.querySelectorAll('.portfolio-buttons'),
+buttons = document.querySelectorAll('.tab-button'),
 tabs = document.querySelectorAll('.tab-icons'),
-main_icons = document.querySelector('.portfolio-icons');
+main_icons = document.querySelector('.portfolio-icons'),
+main_button = document.querySelector('.main-button');
 console.log(tabs);
 modal_image.forEach((i,index)=>{
     i.addEventListener('click',()=>{
@@ -30,17 +31,18 @@ modal_body.addEventListener('click',function(){
 
 buttons.forEach((i,index)=>{
     i.addEventListener('click',function(){
-        if(index == 0){
-            main_icons.style.display = "block";
-        }else {
-            main_icons.style.display = "none";
-        }
-        tabs.forEach(j => {
-            j.style.left = "-150%";
-        })
-        tabs[index - 1].style.left="0";
+      tabs.forEach(i=>{
+          i.style.left = "-150%";
+      })
+         tabs[index].style.left="0";
     })
 });
+
+main_button.addEventListener('click',function(){
+    tabs.forEach(i=>{
+        i.style.left = "-150%";
+    })
+})
 
 // let buttons = document.querySelectorAll('.portfolio-buttons');
 // let tabs = document.querySelectorAll('')
