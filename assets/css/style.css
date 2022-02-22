@@ -300,7 +300,7 @@ header .wrapper {
 }
 
 .about-people figure {
-  width: 330px;
+  width: 329px;
   height: 340px;
   margin: auto;
 }
@@ -387,7 +387,7 @@ header .wrapper {
 /* contact us section start */
 
 .contact-us {
-  padding: 70px 0;
+  padding: 70px 0 88px;
 }
 
 .contact-info {
@@ -558,8 +558,12 @@ footer .wrapper {
   white-space: nowrap;
 }
 
+.move-up {
+  margin-right: 3px;
+}
+
 .move-up a {
-  padding: 7px 16px;
+  padding: 8px 16px;
   border: 2px solid #1BBC9B;
   background-color: #1BBC9B;
   color: #fff;
