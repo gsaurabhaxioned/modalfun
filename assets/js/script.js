@@ -10,16 +10,17 @@ let modal_image = document.querySelectorAll('.modal-click'),
 modal_body = document.querySelector('.modal-body'),
 modal_box = document.querySelector('.modal-box'),
 image_source = document.querySelector('.modal-image'),
-buttons = document.querySelectorAll('.tab-button'),
-tabs = document.querySelectorAll('.tab-icons'),
 main_icons = document.querySelector('.portfolio-icons'),
-main_button = document.querySelector('.main-button');
+main_button = document.querySelector('.main-button'),
+graphic_design = document.querySelectorAll('.graphic-design'),
+web_design = document.querySelectorAll('.web-design'),
+flat_design = document.querySelectorAll('.flat-design')
+all_designs = document.querySelectorAll('.all');
 modal_image.forEach((i,index)=>{
     i.addEventListener('click',()=>{
         modal_body.style.display = "block";
         modal_box.style.display = "block";
          image_source.src = modal_image[index].src;
-    // console.log(modal_image[index].src)
     });
 })
 
@@ -28,20 +29,6 @@ modal_body.addEventListener('click',function(){
     modal_box.style.display = "none";
 })
 
-buttons.forEach((i,index)=>{
-    i.addEventListener('click',function(){
-      tabs.forEach(i=>{
-          i.style.left = "-150%";
-      })
-         tabs[index].style.left="0";
-    })
-});
-
-main_button.addEventListener('click',function(){
-    tabs.forEach(i=>{
-        i.style.left = "-150%";
-    })
-})
 
 
 
