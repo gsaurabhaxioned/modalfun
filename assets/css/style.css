@@ -166,16 +166,24 @@ header .wrapper {
   justify-content: space-between;
 }
 
-.menus ul li a {
-  padding: 16px 0;
+.menus ul li {
+  padding: 16px 16px;
   color: #000;
   font-size: 21px;
 }
 
 
-.menus ul li a:hover {
+.menus ul li:hover {
   padding: 16px;  
   background-color: #1BBC9B;
+}
+
+.menus ul li:hover a {
+  color: #fff;
+}
+
+.menus ul li a {
+  color: #000;
 }
 
 /*=================================
@@ -394,7 +402,7 @@ header .wrapper {
   justify-content: space-between;
   flex-wrap: wrap;
   flex-basis: 49%;
-  row-gap: 33px;
+  row-gap: 30px;
 }
 
 .name,.email {
@@ -427,7 +435,7 @@ textarea {
 }
 
 input[type="submit"] {
-  padding: 17px 50px;
+  padding: 16px 50px;
   background-color: #1BBC9B;
   border: 2px solid #1BBC9B;
   color: #fff;
@@ -449,16 +457,20 @@ input[type="submit"]:hover {
   flex-basis: 49%;
 }
 
+.address-info span {
+  line-height: 28px;
+}
+
 .address-info ul {
   margin-top: 28px;
   display: flex;
   flex-direction: column;
-  row-gap: 33px;
+  row-gap: 28px;
 }
 
-.address-info ul li a {
+.address-info ul li a,address {
   color: #000;
-  font-size: 19px;
+  font-size: 20px;
   transition: all ease-in-out 0.5s;
   -webkit-transition: all ease-in-out 0.5s;
   -ms-transition: all ease-in-out 0.5s;
@@ -511,6 +523,10 @@ input[type="submit"]:hover {
   color: #ffa500;
 }
 
+.phone {
+  margin-top: 4px;
+}
+
 /* contat us section end  */
 
 /*=================================
@@ -543,7 +559,7 @@ footer .wrapper {
 }
 
 .move-up a {
-  padding: 9px 18px;
+  padding: 7px 16px;
   border: 2px solid #1BBC9B;
   background-color: #1BBC9B;
   color: #fff;
