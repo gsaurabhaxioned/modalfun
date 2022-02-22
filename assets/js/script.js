@@ -19,7 +19,7 @@ modal_image.forEach((i,index)=>{
         modal_body.style.display = "block";
         modal_box.style.display = "block";
          image_source.src = modal_image[index].src;
-    console.log(modal_image[index].src)
+    // console.log(modal_image[index].src)
     });
 })
 
