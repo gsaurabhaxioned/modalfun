@@ -11,7 +11,10 @@ modal_body = document.querySelector('.modal-body'),
 modal_box = document.querySelector('.modal-box'),
 image_source = document.querySelector('.modal-image'),
 main_icons = document.querySelector('.portfolio-icons'),
-main_button = document.querySelector('.main-button'),
+all_button = document.querySelector('.all-button'),
+graphic_button = document.querySelector('.graphic-button'),
+web_button = document.querySelector('.web-button'),
+flat_button = document.querySelector('.flat-button'),
 graphic_design = document.querySelectorAll('.graphic-design'),
 web_design = document.querySelectorAll('.web-design'),
 flat_design = document.querySelectorAll('.flat-design')
@@ -27,6 +30,30 @@ modal_image.forEach((i,index)=>{
 modal_body.addEventListener('click',function(){
     modal_body.style.display = "none";
     modal_box.style.display = "none";
+})
+
+all_button.addEventListener('click',function(){
+    all_designs.forEach(i=>{
+        i.style.display = "block";
+    });
+})
+
+graphic_button.addEventListener('click',function(){
+    all_designs.forEach(i=>{
+        i.style.display = "none";
+    })
+})
+
+flat_button.addEventListener('click',function(){
+    all_designs.forEach(i=>{
+        i.style.display = "none";
+    })
+})
+
+web_button.addEventListener('click',function(){
+    all_designs.forEach(i=>{
+        i.style.display = "none";
+    })
 })
 
 
