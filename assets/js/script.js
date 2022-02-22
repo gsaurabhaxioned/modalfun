@@ -14,7 +14,6 @@ buttons = document.querySelectorAll('.tab-button'),
 tabs = document.querySelectorAll('.tab-icons'),
 main_icons = document.querySelector('.portfolio-icons'),
 main_button = document.querySelector('.main-button');
-console.log(tabs);
 modal_image.forEach((i,index)=>{
     i.addEventListener('click',()=>{
         modal_body.style.display = "block";
@@ -44,8 +43,6 @@ main_button.addEventListener('click',function(){
     })
 })
 
-// let buttons = document.querySelectorAll('.portfolio-buttons');
-// let tabs = document.querySelectorAll('')
 
 
 
