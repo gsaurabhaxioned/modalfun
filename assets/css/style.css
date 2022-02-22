@@ -249,7 +249,7 @@ header .wrapper {
   height: 60%;
   position: absolute;
   z-index: 1;
-  top: 29%;
+  top: 28%;
   left: -200%;
   background-color: #fff;
 }
@@ -616,6 +616,10 @@ header .wrapper,.about-people,.contact-info,footer .wrapper {
   text-align: center;
 }
 
+.tab-icons {
+  top: 19%;
+}
+
 }  
 
 @media only screen and (max-width: 768px) {
@@ -632,7 +636,8 @@ header .wrapper,.about-people,.contact-info,footer .wrapper {
   }
 
   .menus ul li a:hover {
-    padding: initial;
+    padding: 16px 0;
+    background-color: initial;
   }
 
   .hamburger {
